@@ -83,7 +83,7 @@ namespace Microsoft.Teams.Apps.GoodReads.Helpers
                 case (int)PostTypeEnum.Book:
                     return new PostType { PostTypeName = this.localizer.GetString("BookPostType"), IconName = "bookTypeDot.png", PostTypeId = 5 };
                     
-                case 0:
+                default:
                     return null;
             }
         }
