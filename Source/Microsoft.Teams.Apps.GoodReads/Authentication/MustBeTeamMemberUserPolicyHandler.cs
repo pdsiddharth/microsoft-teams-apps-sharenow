@@ -95,7 +95,7 @@ namespace Microsoft.Teams.Apps.GoodReads.Authentication
                     using (var jsonReader = new JsonTextReader(streamReader))
                     {
                         var obj = JObject.Load(jsonReader);
-                        var teamEntity = obj.ToObject<TeamEntity>();
+                        var teamEntity = obj.ToObject<TeamTagEntity>();
                         authorizationFilterContext.HttpContext.Request.Body.Seek(0, SeekOrigin.Begin);
                         teamId = teamEntity.TeamId;
                     }
