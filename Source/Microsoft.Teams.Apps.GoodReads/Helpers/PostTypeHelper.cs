@@ -72,17 +72,13 @@ namespace Microsoft.Teams.Apps.GoodReads.Helpers
             switch (key)
             {
                 case (int)PostTypeEnum.BlogPost:
-                    return new PostType { PostTypeName = this.localizer.GetString("BlogPostType"), IconName = "blogTypeDot.png", PostTypeId = 1 };
-                
+                    return new PostType { PostTypeName = this.localizer.GetString("BlogPostType"), IconName = "blogTypeDot.png", PostTypeId = 1 };                
                 case (int)PostTypeEnum.Other:
-                    return new PostType { PostTypeName = this.localizer.GetString("OtherPostType"), IconName = "otherTypeDot.png", PostTypeId = 2 };
-                    
+                    return new PostType { PostTypeName = this.localizer.GetString("OtherPostType"), IconName = "otherTypeDot.png", PostTypeId = 2 };                    
                 case (int)PostTypeEnum.Podcast:
-                    return new PostType { PostTypeName = this.localizer.GetString("VideoPostType"), IconName = "videoTypeDot.png", PostTypeId = 4 };
-                    
+                    return new PostType { PostTypeName = this.localizer.GetString("VideoPostType"), IconName = "videoTypeDot.png", PostTypeId = 4 };                    
                 case (int)PostTypeEnum.Book:
-                    return new PostType { PostTypeName = this.localizer.GetString("BookPostType"), IconName = "bookTypeDot.png", PostTypeId = 5 };
-                    
+                    return new PostType { PostTypeName = this.localizer.GetString("BookPostType"), IconName = "bookTypeDot.png", PostTypeId = 5 };                    
                 default:
                     return null;
             }
